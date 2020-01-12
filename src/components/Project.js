@@ -4,13 +4,22 @@ import { Link } from "react-router-dom";
 
 const StyledSection = styled.section`
   border: 1px solid black;
-  width: 60%;
+  width: 100%;
+  max-width: 800px;
   margin: 15px auto;
   display: flex:
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-  padding: 0 5px;
+  box-shadow: 5px 5px 5px 0px;
+
+  &:hover {
+    transform: scale(1.01);   
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 90%;
+  }
 `;
 
 const StyledImage = styled.img`
@@ -19,6 +28,7 @@ const StyledImage = styled.img`
 
 const StyledTitle = styled.h2`
   text-align: center;
+  color: blue;
 `;
 
 const StyledA = styled.a`
@@ -29,10 +39,20 @@ const StyledA = styled.a`
 const StyledTechStack = styled.ul`
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
-  width: 90%;
+  justify-content: space-around;
+  width: 100%;
+  list-style-type: none;
+  border-top: 1px solid lightgrey;
+  padding-left: 0;
 `;
 
+const StyledTechStackitem = styled.li`
+  text-align: left;
+`;
+
+const StyledSummary = styled.p`
+  padding: 5px 5px;
+`;
 const Project = ({
   title,
   summary,
@@ -48,17 +68,17 @@ const Project = ({
       </StyledA>
       <StyledImage src={picture} />
 
-      <StyledTechStack>
-        {techStackArray.map(tech => (
-          <li>{tech}</li>
-        ))}
-      </StyledTechStack>
-      <p>{summary}</p>
+      <StyledSummary>{summary}</StyledSummary>
       <ul>
         {bullets.map(bullet => (
           <li>{bullet}</li>
         ))}
       </ul>
+      <StyledTechStack>
+        {techStackArray.map(tech => (
+          <StyledTechStackitem>{tech}</StyledTechStackitem>
+        ))}
+      </StyledTechStack>
     </StyledSection>
   );
 };

@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 const StyledFooter = styled.footer`
   margin: 0 auto;
-  width: 20%;
+  width: 50%;
+  text-align: center;
 `;
 
 const Footer = () => {
