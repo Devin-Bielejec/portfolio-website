@@ -6,7 +6,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
-
+import Footer from "./components/Footer";
 /* 
 Nav:
 
@@ -29,9 +29,10 @@ function App() {
   return (
     <Router>
       <Nav />
-      <Route path="/about" component={About} />
+      <Route path="/" component={About} />
       <Route path="/projects" component={Projects} />
       <Route path="/contact" component={Contact} />
+      <Footer />
     </Router>
   );
 }
