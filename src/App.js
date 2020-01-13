@@ -30,8 +30,8 @@ function App() {
     <Router>
       <Nav />
       <Route path="/" component={About} />
-      <Route path="/projects" component={Projects} />
-      <Route path="/contact" component={Contact} />
+      <Route exact path="/projects" component={Projects} />
+      <Route exact path="/contact" component={Contact} />
       <Footer />
     </Router>
   );
