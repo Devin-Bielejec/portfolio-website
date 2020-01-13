@@ -29,7 +29,7 @@ function App() {
   return (
     <Router>
       <Nav />
-      <Route path="/about" component={About} />
+      <Route path="/" component={About} />
       <Route path="/projects" component={Projects} />
       <Route path="/contact" component={Contact} />
       <Footer />
