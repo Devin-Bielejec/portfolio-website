@@ -8,7 +8,7 @@ const StyledMain = styled.main`
   justify-content: center;
   margin: 100px auto;
   padding: 0 10px;
-  width: 100%;
+  max-width: 800px;
 `;
 
 const StyledImage = styled.img`

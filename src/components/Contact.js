@@ -5,7 +5,7 @@ const StyledSection = styled.section`
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  width: 50%;
+  max-width: 800px;
   margin: 100px auto;
 `;
 

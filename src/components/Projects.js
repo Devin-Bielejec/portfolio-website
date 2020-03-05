@@ -8,6 +8,7 @@ import styled from "styled-components";
 const StyledMain = styled.main`
   display: flex;
   flex-flow: row wrap;
+  max-width: 800px;
 `;
 
 const Projects = () => {
