@@ -6,7 +6,8 @@ const StyledNav = styled.nav`
   display: flex;
   justify-content: space-around;
   font-size: 2rem;
-  margin: 10px 0;
+  padding: 10px 0;
+  background-color: darkgrey;
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -17,7 +18,7 @@ const StyledNavLink = styled(NavLink)`
 const Nav = () => {
   return (
     <StyledNav>
-      <StyledNavLink to="/about">About</StyledNavLink>
+      <StyledNavLink to="/">About</StyledNavLink>
       <StyledNavLink to="/projects">Projects</StyledNavLink>
       <StyledNavLink to="/contact">Contact</StyledNavLink>
     </StyledNav>

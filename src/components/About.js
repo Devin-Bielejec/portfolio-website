@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ProfilePicture from "../img/profilePicture.jpg";
 
 const StyledMain = styled.main`
   display: flex;
@@ -7,26 +8,44 @@ const StyledMain = styled.main`
   justify-content: center;
   margin: 100px auto;
   padding: 0 10px;
-  width: 60%;
+  width: 100%;
+`;
+
+const StyledImage = styled.img`
+  width: 40%;
 `;
 const About = () => {
   return (
     <StyledMain>
       <section>
+        <StyledImage src={ProfilePicture} />
         <p>
-          I am a Full Stack Web Developer with a passion for learning tools and
-          techniques to brings his ideas to life. I'm currently enrolled at
-          Lambda School and spend a lot of time learning, making small games
-          with React, and figuring out problems.
+          I am a High School Math Teacher with a passion for learning tools and
+          techniques to brings my ideas to life. I've spent the last year
+          studying Web Development and Computer Science at Lambda School, a
+          9-month intensive fully remote online bootcamp. I spend most of my
+          time learning, making games with React, and figuring out problems.
         </p>
         <p>
-          When I'm not on my computer, I'm playing with my 3 dogs or tending to
-          many 30ish chickens. I like to travel for food and end up taking lots
-          of pictures of the good food I eat.
+          When I'm not on my computer, I'm playing with my 3 dogs, tending to
+          many 30ish chickens, or making food for friends. I like to travel for
+          food, and I'm a huge local food fan.
         </p>
         <p>
-          I'm a huge local food fan and enjoying baking bread and eating good
-          food.
+          Currently I'm working on an{" "}
+          <a
+            href={"https://bielejecsheets.netlify.com"}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ "text-decoration": "none", color: "blue" }}
+          >
+            app
+          </a>{" "}
+          for teachers that will give them the freedom to choose their own
+          questions from a question bank and create assessments. In addition,
+          I'm working on other side projects that improve and help teachers save
+          time, so they can spend the majority of time on the parts of school
+          that matter the most.
         </p>
       </section>
     </StyledMain>

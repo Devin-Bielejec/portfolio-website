@@ -1,5 +1,12 @@
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -9,8 +16,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 75%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   font-size: 2rem;
 }
 
@@ -19,6 +26,7 @@ body {
     width: 100%;
   }
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
